@@ -16,7 +16,11 @@ Plug 'vimwiki/vimwiki'
 call plug#end()
 
 let g:gruvbox_italic=1
-set background=dark
+"set background=dark
+set t_Co=256
+set termguicolors
+set scrolloff=10
+colorscheme gruvbox
 
 
 
@@ -26,6 +30,7 @@ if exists('g:vscode')
 endif
 "  source ~/AppData/Local/nvim/cp.vim
 "  source ~/AppData/Local/nvim/william.vim
+source ~\AppData\Local\nvim\pack\github\start\copilot.vim\plugin\copilot.vim
 
 set number relativenumber nowrap
 set tabstop=4 shiftwidth=4 softtabstop=4 expandtab smarttab
@@ -62,3 +67,4 @@ inoremap { {}<Left>
 inoremap {<CR> {<CR>}<Esc>O
 inoremap {{ {
 inoremap {} {}
+
